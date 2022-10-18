@@ -3,7 +3,6 @@ require('plugins')
 
 -- simple config
 require('lualine').setup { options = { theme = 'everforest' } }
-require("trouble").setup()
 require('Comment').setup()
 
 -- config
