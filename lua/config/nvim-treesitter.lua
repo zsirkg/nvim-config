@@ -2,7 +2,7 @@ require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "cpp", "lua", "python" },
 
   indent = {
-    enable = true
+    enable = false
   },
 
   highlight = {
@@ -21,11 +21,11 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 -- for floding
-vim.wo.foldmethod = 'expr'
-vim.wo.foldexpr= 'nvim_treesitter#foldexpr()'
-vim.wo.foldlevel = 99
-vim.wo.foldenable=false
-vim.api.nvim_create_autocmd({ "BufEnter" }, {
-   pattern = { "*" },
-   command = "normal zx",
-})
+-- vim.wo.foldmethod = 'expr'
+-- vim.wo.foldexpr= 'nvim_treesitter#foldexpr()'
+-- vim.wo.foldlevel = 9999
+-- vim.wo.foldenable=false
+-- vim.api.nvim_create_autocmd({ "BufEnter" }, {
+--    pattern = { "*" },
+--    command = "normal zx",
+-- })
