@@ -49,5 +49,6 @@ return require('packer').startup(function(use)
   use {'akinsho/bufferline.nvim', tag = 'v3.*'}
 
   use {'glepnir/lspsaga.nvim', branch = 'main'}
+  use {'phaazon/hop.nvim', branch = 'v2'}
 
 end)

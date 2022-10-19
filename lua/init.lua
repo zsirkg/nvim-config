@@ -6,6 +6,7 @@ require('lualine').setup { options = { theme = 'everforest' } }
 require('Comment').setup()
 
 -- config
+require('config.mason')
 require('config.nvim-tree')
 require('config.nvim-treesitter')
 require('config.nvim-treesitter-textobjects')
@@ -15,3 +16,4 @@ require('config.telescope')
 require('config.gitsigns')
 require('config.bufferline')
 require('config.lspsaga')
+require('config.hop')
