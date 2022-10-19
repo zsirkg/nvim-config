@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim',
     'nvim-tree/nvim-tree.lua',
     'mg979/vim-visual-multi',
-    'voldikss/vim-floaterm'
+    'goolord/alpha-nvim'
   }
 
   use {

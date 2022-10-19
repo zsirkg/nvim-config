@@ -4,6 +4,7 @@ require('plugins')
 -- simple config
 require('lualine').setup { options = { theme = 'everforest' } }
 require('Comment').setup()
+require('alpha').setup(require'alpha.themes.startify'.config)
 
 -- config
 require('config.mason')
