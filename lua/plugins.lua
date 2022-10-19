@@ -5,6 +5,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
+    'bfrg/vim-cpp-modern',
     'ishan9299/nvim-solarized-lua',
     'kyazdani42/nvim-web-devicons',
     'nvim-lua/plenary.nvim'
@@ -45,7 +46,7 @@ return require('packer').startup(function(use)
   use {'nvim-treesitter/nvim-treesitter-textobjects'}
 
   use {'nvim-lualine/lualine.nvim'}
-  use {'akinsho/bufferline.nvim', tag = 'v2.*'}
+  use {'akinsho/bufferline.nvim', tag = 'v3.*'}
 
   use {'glepnir/lspsaga.nvim', branch = 'main'}
 

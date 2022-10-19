@@ -123,4 +123,16 @@ hi! LspReferenceRead gui=none guibg=#073642
 hi! LspReferenceText gui=none guibg=#073642
 hi! LspReferenceWrite gui=none guibg=#073642
 
+"------------------------------------------------------------------------------
+" Plugin.
+"-----------------------------------------------------------------------------
+" a.vim
+nnoremap <Leader>s :IHS<CR>:A<CR>
+
+" vim-cpp-modern
+let g:cpp_function_highlight = 1
+let g:cpp_attributes_highlight = 1
+let g:cpp_member_highlight = 1
+let g:cpp_simple_highlight = 1
+
 ]])
