@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
 
   use {
     'lewis6991/gitsigns.nvim',
+    'tpope/vim-fugitive',
     'sindrets/diffview.nvim',
     'numToStr/Comment.nvim',
     'vim-scripts/a.vim'

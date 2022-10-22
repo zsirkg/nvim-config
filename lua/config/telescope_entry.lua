@@ -31,7 +31,7 @@ function my_make_entry.gen_from_buffer_like_leaderf(opts)
       { width = bufnr_width },
       { width = 4 },
       { width = vim.fn.strwidth(default_icons) },
-      { width = 30 },
+      { width = 40 },
       { remaining = true },
     },
   }

@@ -2,7 +2,6 @@ require('basic')
 require('plugins')
 
 -- simple config
-require('lualine').setup { options = { theme = 'everforest' } }
 require('Comment').setup()
 require('alpha').setup(require'alpha.themes.startify'.config)
 
@@ -16,5 +15,6 @@ require('config.nvim-cmp')
 require('config.telescope')
 require('config.gitsigns')
 require('config.bufferline')
+require('config.lualine')
 require('config.lspsaga')
 require('config.hop')
