@@ -2,7 +2,7 @@ local treesitter = require('nvim-treesitter')
 
 local function treelocation()
   return treesitter.statusline({
-    indicator_size = 120,
+    indicator_size = 100,
     type_patterns = {'class', 'function', 'method'},
     separator = ' -> '
   })

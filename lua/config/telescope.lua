@@ -25,6 +25,7 @@ require('telescope').setup {
     buffers = {
       entry_maker = require"config.telescope_entry".gen_from_buffer_like_leaderf(),
       previewer = false,
+      sort_mru = true,
       layout_config = {
         vertical = { width = 0.8, height = 0.8 }
       },
