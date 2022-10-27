@@ -1,8 +1,9 @@
-require('basic')
 require('plugins')
+require('basic')
 
 -- simple config
 require('Comment').setup()
+require('git-conflict').setup()
 require('alpha').setup(require'alpha.themes.startify'.config)
 
 -- config

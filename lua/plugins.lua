@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
   }
 
   use {
+    'akinsho/git-conflict.nvim',
     'lewis6991/gitsigns.nvim',
     'tpope/vim-fugitive',
     'sindrets/diffview.nvim',
