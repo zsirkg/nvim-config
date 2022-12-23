@@ -28,29 +28,34 @@ return require('packer').startup(function(use)
   }
 
   use {
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig'
+    'dense-analysis/ale',
+    'neoclide/coc.nvim', branch = 'release'
   }
 
-  use {
-    'onsails/lspkind-nvim',
-    'hrsh7th/cmp-nvim-lsp',
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/cmp-path',
-    'hrsh7th/cmp-cmdline',
-    'hrsh7th/nvim-cmp',
-    'L3MON4D3/LuaSnip',
-    'saadparwaiz1/cmp_luasnip'
-  }
+  -- use {
+  --   'williamboman/mason.nvim',
+  --   'williamboman/mason-lspconfig.nvim',
+  --   'neovim/nvim-lspconfig'
+  -- }
 
-  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-  use {'nvim-treesitter/nvim-treesitter-textobjects'}
+  -- use {
+  --   'onsails/lspkind-nvim',
+  --   'hrsh7th/cmp-nvim-lsp',
+  --   'hrsh7th/cmp-buffer',
+  --   'hrsh7th/cmp-path',
+  --   'hrsh7th/cmp-cmdline',
+  --   'hrsh7th/nvim-cmp',
+  --   'L3MON4D3/LuaSnip',
+  --   'saadparwaiz1/cmp_luasnip'
+  -- }
+
+  -- use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  -- use {'nvim-treesitter/nvim-treesitter-textobjects'}
 
   use {'nvim-lualine/lualine.nvim'}
   use {'akinsho/bufferline.nvim', tag = 'v3.*'}
 
-  use {'glepnir/lspsaga.nvim', branch = 'main'}
+  -- use {'glepnir/lspsaga.nvim', branch = 'main'}
   use {'phaazon/hop.nvim', branch = 'v2'}
 
 end)

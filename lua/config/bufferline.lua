@@ -13,10 +13,10 @@ require'bufferline'.setup {
 local opts = {silent = true}
 
 -- Navigation
-vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', opts)
-vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', opts)
-vim.keymap.set('n', '<Right>', '<Cmd>BufferLineCycleNext<CR>', opts)
-vim.keymap.set('n', '<Left>', '<Cmd>BufferLineCyclePrev<CR>', opts)
+-- vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', opts)
+-- vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', opts)
+-- vim.keymap.set('n', '<Right>', '<Cmd>BufferLineCycleNext<CR>', opts)
+-- vim.keymap.set('n', '<Left>', '<Cmd>BufferLineCyclePrev<CR>', opts)
 
 -- Tab management
 vim.keymap.set('n', '<leader>tW', function()
