@@ -11,7 +11,7 @@ end
 require('lualine').setup {
   options = { theme = 'everforest' },
   sections = {
-    lualine_c = {'filename'}
+    lualine_c = {{'filename', path = 1}}
   },
   winbar = {
     lualine_a = {{'filename'}, {treelocation}}
