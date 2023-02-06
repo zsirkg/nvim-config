@@ -12,6 +12,9 @@ require'bufferline'.setup {
 
 local opts = {silent = true}
 
+vim.keymap.set('n', '<Right>', '<Cmd>BufferLineCycleNext<CR>', opts)
+vim.keymap.set('n', '<Left>', '<Cmd>BufferLineCyclePrev<CR>', opts)
+
 -- Tab management
 vim.keymap.set('n', '<leader>tW', function()
   require'bufferline.commands'.close_in_direction('left', false)
