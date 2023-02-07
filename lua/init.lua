@@ -3,8 +3,10 @@ require('basic')
 
 -- simple config
 require('Comment').setup()
+require('modicator').setup()
 require('git-conflict').setup()
 require('alpha').setup(require'alpha.themes.startify'.config)
+require('lsp-progress').setup()
 
 -- config
 require('config.mason')

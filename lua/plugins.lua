@@ -8,7 +8,8 @@ return require('packer').startup(function(use)
     'bfrg/vim-cpp-modern',
     'ishan9299/nvim-solarized-lua',
     'kyazdani42/nvim-web-devicons',
-    'nvim-lua/plenary.nvim'
+    'nvim-lua/plenary.nvim',
+    'mawkler/modicator.nvim'
   }
 
   use {
@@ -30,7 +31,8 @@ return require('packer').startup(function(use)
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig'
+    'neovim/nvim-lspconfig',
+    'linrongbin16/lsp-progress.nvim'
   }
 
   use {
