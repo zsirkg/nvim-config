@@ -1,5 +1,17 @@
-require('lspsaga').setup({})
+saga = require('lspsaga')
 local keymap = vim.keymap.set
+
+saga.setup({
+  symbol_in_winbar = {
+    enable = true,
+    separator = " ",
+    hide_keyword = true,
+    show_file = true,
+    folder_level = 1,
+    respect_root = false,
+    color_mode = true,
+  },
+})
 
 -- LSP finder - Find the symbol's definition
 -- If there is no definition, it will instead be hidden

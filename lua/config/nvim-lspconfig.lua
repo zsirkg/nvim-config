@@ -46,3 +46,12 @@ require('lspconfig')['pyright'].setup{
 require('lspconfig')['ccls'].setup{
   on_attach = on_attach,
 }
+require('lspconfig')['bashls'].setup{
+  on_attach = on_attach,
+}
+require('lspconfig')['jsonls'].setup{
+  on_attach = on_attach,
+}
+-- require('lspconfig')['sumneko_lua'].setup{
+--   on_attach = on_attach,
+-- }

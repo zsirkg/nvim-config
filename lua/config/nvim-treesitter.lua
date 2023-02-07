@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "cpp", "lua", "python" },
+  ensure_installed = { "c", "cpp", "lua", "python", "vim", "bash", "json"},
 
   indent = {
     enable = false
@@ -21,7 +21,7 @@ require'nvim-treesitter.configs'.setup {
     },
   }
 }
--- for floding
+-- for folding
 -- vim.wo.foldmethod = 'expr'
 -- vim.wo.foldexpr= 'nvim_treesitter#foldexpr()'
 -- vim.wo.foldlevel = 9999

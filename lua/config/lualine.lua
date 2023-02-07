@@ -13,7 +13,7 @@ require('lualine').setup {
   sections = {
     lualine_c = {{'filename', path = 1}}
   },
-  winbar = {
-    lualine_a = {{'filename'}, {treelocation}}
-  }
+  -- winbar = {
+  --   lualine_a = {{'filename'}, {treelocation}}
+  -- }
 }
