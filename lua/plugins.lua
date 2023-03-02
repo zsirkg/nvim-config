@@ -55,4 +55,6 @@ return require('packer').startup(function(use)
   use {'glepnir/lspsaga.nvim', branch = 'main'}
   use {'phaazon/hop.nvim', branch = 'v2'}
 
+  use {"akinsho/toggleterm.nvim", tag = '*'}
+
 end)

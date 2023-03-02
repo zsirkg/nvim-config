@@ -11,7 +11,7 @@ set hidden              " 允许在未保存的buffer中切换
 
 set number              " 显示行号
 set relativenumber      " 显示相对行号
-set cursorline          " 高亮鼠标行
+" set cursorline          " 高亮鼠标行
 
 set scrolloff=10        " 垂直移动时保持n行固定
 set sidescroll=5        " 水平移动时保持n列固定
