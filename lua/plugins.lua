@@ -9,7 +9,6 @@ return require('packer').startup(function(use)
     'ishan9299/nvim-solarized-lua',
     'kyazdani42/nvim-web-devicons',
     'nvim-lua/plenary.nvim',
-    'mawkler/modicator.nvim'
   }
 
   use {
@@ -54,7 +53,5 @@ return require('packer').startup(function(use)
 
   use {'glepnir/lspsaga.nvim', branch = 'main'}
   use {'phaazon/hop.nvim', branch = 'v2'}
-
-  use {"akinsho/toggleterm.nvim", tag = '*'}
 
 end)

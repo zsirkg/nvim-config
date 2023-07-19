@@ -3,11 +3,9 @@ require('basic')
 
 -- simple config
 require('Comment').setup()
--- require('modicator').setup()
 require('git-conflict').setup()
-require('alpha').setup(require'alpha.themes.startify'.config)
 require('lsp-progress').setup()
-require("toggleterm").setup()
+require('alpha').setup(require'alpha.themes.startify'.config)
 
 -- config
 require('config.mason')
