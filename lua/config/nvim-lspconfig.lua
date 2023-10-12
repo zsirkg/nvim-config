@@ -40,9 +40,9 @@ local on_attach = function(client, bufnr)
   end
 end
 
--- require('lspconfig')['pyright'].setup{
---   on_attach = on_attach,
--- }
+require('lspconfig')['pyright'].setup{
+  on_attach = on_attach,
+}
 require('lspconfig')['ccls'].setup{
   on_attach = on_attach,
 }
