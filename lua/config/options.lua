@@ -79,8 +79,8 @@ endif
 "------------------------------------------------------------------------------
 " Background
 "-----------------------------------------------------------------------------
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 " tmux
 set termguicolors
@@ -91,8 +91,8 @@ set t_ZR=^[[23m
 " map
 "-----------------------------------------------------------------------------
 let g:mapleader = ","
-let g:python3_host_prog = '/usr/bin/python3'
-let g:python2_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/home/tops/bin/python3.6'
+let g:python2_host_prog = '/home/tops/bin/python'
 
 " 移动支持折行
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')

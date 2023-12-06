@@ -79,4 +79,3 @@ function my_make_entry.gen_from_buffer_like_leaderf(opts)
 end
 
 return my_make_entry
-
