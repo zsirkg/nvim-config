@@ -1,8 +1,9 @@
 -- use commit: 8bd402ad4f138af23948115dc380319069b79a01
 return {
   'nvimdev/lspsaga.nvim',
+  commit = "8bd402a",
   dependencies = {
-    'nvim-treesitter/nvim-treesitter', -- optional
+    -- 'nvim-treesitter/nvim-treesitter', -- optional
     'nvim-tree/nvim-web-devicons'     -- optional
   },
   config = function()
@@ -11,7 +12,7 @@ return {
         show_code_action = true,
       },
       symbol_in_winbar = {
-        enable = true,
+        enable = enable,
         separator = " ",
         hide_keyword = true,
         show_file = true,
