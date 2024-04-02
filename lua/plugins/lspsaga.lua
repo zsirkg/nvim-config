@@ -25,6 +25,7 @@ return {
     keymap("n", "gr", "<cmd>Lspsaga lsp_finder<CR>")
     keymap("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
     keymap("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+    keymap("n","<leader>o", "<cmd>Lspsaga outline<CR>")
     -- vim.keymap.set("n", "gr", "<cmd>Lspsaga finder<CR>", { silent = true })
     -- vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })
     -- vim.keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })

@@ -16,7 +16,7 @@ set relativenumber      " 显示相对行号
 set scrolloff=20        " 垂直移动时保持n行固定
 set sidescroll=5        " 水平移动时保持n列固定
 
-set tabstop=2          " 制表符等于几个空格
+set tabstop=2           " 制表符等于几个空格
 set shiftwidth=2        " 制表符缩进时应用几个空格
 set expandtab           " 使用扩展制表符
 set autoindent          " Auto indent

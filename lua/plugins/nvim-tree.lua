@@ -4,9 +4,15 @@
 -------------------------------------------------
 local M = {
   "nvim-tree/nvim-tree.lua",
-  dependencies = {"nvim-tree/nvim-web-devicons"},
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   cmd = "NvimTreeToggle",
-  config = true,
+  config = function()
+    require('nvim-tree').setup({
+      view = {
+        adaptive_size = true,
+      },
+    })
+  end,
 }
 
 return M
