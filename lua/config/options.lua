@@ -28,7 +28,7 @@ set fencs=utf-8,gb18030 " 打卡文件时优先选择编码格式
 set ffs=unix,dos,mac    " 文件结束符
 set autoread            " 自动读取文件的修改(其他软件的修改)
 set nofoldenable        " 关闭折叠
-set clipboard=unnamed   " 复制使用系统剪切板
+" set clipboard=unnamed   " 复制使用系统剪切板
 
 set hlsearch            " 搜索时高亮
 set incsearch           " 搜索输入高亮
@@ -134,9 +134,9 @@ hi! LspReferenceWrite gui=none guibg=#073642
 nnoremap <Leader>s :IHS<CR>:A<CR>
 
 " vim-cpp-modern
-let g:cpp_function_highlight = 1
-let g:cpp_attributes_highlight = 1
-let g:cpp_member_highlight = 1
-let g:cpp_simple_highlight = 1
+" let g:cpp_function_highlight = 1
+" let g:cpp_attributes_highlight = 1
+" let g:cpp_member_highlight = 1
+" let g:cpp_simple_highlight = 1
 
 ]])
