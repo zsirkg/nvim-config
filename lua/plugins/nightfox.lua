@@ -1,5 +1,7 @@
 return {
   "EdenEast/nightfox.nvim",
+  lazy = false,
+  priority = 1000,
   config = function()
     local palettes = {
       -- Everything defined under `all` will be applied to each style.
