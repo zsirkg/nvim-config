@@ -91,7 +91,7 @@ set t_ZR=^[[23m
 " map
 "-----------------------------------------------------------------------------
 let g:mapleader = ","
-let g:python3_host_prog = '/home/tops/bin/python3.6'
+let g:python3_host_prog = '/usr/local/bin/python3.11'
 let g:python2_host_prog = '/home/tops/bin/python'
 
 " 移动支持折行
@@ -104,6 +104,10 @@ noremap <c-h> <c-w>h
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 noremap <c-l> <c-w>l
+inoremap <c-j> <Esc><c-w>j
+inoremap <c-k> <Esc><c-w>k
+tnoremap <c-j> <C-\><C-n><c-w>j
+tnoremap <c-k> <C-\><C-n><c-w>k
 
 " 复制粘贴
 vnoremap p "_dp
@@ -113,6 +117,10 @@ noremap <silent> <leader>w :w<cr>
 
 " esc
 inoremap jk <esc>
+
+" 退出
+nnoremap <C-q> :q!<CR>
+inoremap <C-q> <Esc>:q!<CR>
 
 "------------------------------------------------------------------------------
 " Other.
@@ -135,9 +143,29 @@ hi! LspReferenceWrite gui=none guibg=#073642
 nnoremap <Leader>s :IHS<CR>:A<CR>
 
 " vim-cpp-modern
-" let g:cpp_function_highlight = 1
-" let g:cpp_attributes_highlight = 1
-" let g:cpp_member_highlight = 1
-" let g:cpp_simple_highlight = 1
+let g:cpp_function_highlight = 1
+let g:cpp_attributes_highlight = 1
+let g:cpp_member_highlight = 1
+let g:cpp_simple_highlight = 1
 
+" nvim-gdb
+let g:nvimgdb_disable_start_keymaps = 1
+" We're going to define single-letter keymaps, so don't try to define them
+" in the terminal window.  The debugger CLI should continue accepting text commands.
+function! NvimGdbNoTKeymaps()
+  tnoremap <silent> <buffer> <esc> <c-\><c-n>
+endfunction
+
+let g:nvimgdb_config_override = {
+  \ 'key_next': 'n',
+  \ 'key_step': '<c-s>',
+  \ 'key_finish': 'f',
+  \ 'key_continue': 'c',
+  \ 'key_until': '<c-u>',
+  \ 'key_eval': 'p',
+  \ 'key_frameup': '<c-p>',
+  \ 'key_framedown': '<c-n>',
+  \ 'key_breakpoint': '<Space>',
+  \ 'set_tkeymaps': "NvimGdbNoTKeymaps",
+  \ }
 ]])

@@ -1,15 +1,5 @@
 return {
-  {
-    'bfrg/vim-cpp-modern',
-    config = function()
-      vim.cmd([[
-        let g:cpp_function_highlight = 1
-        let g:cpp_attributes_highlight = 1
-        let g:cpp_member_highlight = 1
-        let g:cpp_simple_highlight = 1
-      ]])
-    end,
-  },
+  {'bfrg/vim-cpp-modern',},
   {'mg979/vim-visual-multi'},
   {'tpope/vim-fugitive'},
   {'sindrets/diffview.nvim'},
