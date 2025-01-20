@@ -12,6 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins", {
-  install = { colorscheme = { "solarized" } },
-  debug = true
+  change_detection = {
+    -- automatically check for config file changes and reload the ui
+    enabled = false,
+    notify = true, -- get a notification when changes are found
+  },
 })

@@ -1,7 +1,6 @@
 -- use commit: 8bd402ad4f138af23948115dc380319069b79a01
 return {
   'nvimdev/lspsaga.nvim',
-  commit = "8bd402a",
   dependencies = {
     -- 'nvim-treesitter/nvim-treesitter', -- optional
     'nvim-tree/nvim-web-devicons'     -- optional
@@ -11,23 +10,24 @@ return {
       diagnostic = {
         show_code_action = true,
       },
+      code_action_lightbulb = {
+        enable = false,
+      },
       symbol_in_winbar = {
-        enable = enable,
-        separator = " ",
-        hide_keyword = true,
-        show_file = true,
-        folder_level = 1,
-        respect_root = false,
-        color_mode = true,
+        enable = true,
+        folder_level = 0,
+      },
+      finder = {
+        layout = 'normal'
       },
     })
     local keymap = vim.keymap.set
-    keymap("n", "gr", "<cmd>Lspsaga lsp_finder<CR>")
+    keymap("n", "gr", "<cmd>Lspsaga finder<CR>")
+    keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>")
+    keymap("n", "<C-k>", "<cmd>Lspsaga peek_definition<CR>")
     keymap("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
     keymap("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>")
     keymap("n","<leader>o", "<cmd>Lspsaga outline<CR>")
-    -- vim.keymap.set("n", "gr", "<cmd>Lspsaga finder<CR>", { silent = true })
-    -- vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })
-    -- vim.keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
+    keymap('n', 'K', '<cmd>Lspsaga hover_doc<CR>')
   end,
 }

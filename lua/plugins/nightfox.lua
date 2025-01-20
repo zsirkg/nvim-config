@@ -84,7 +84,7 @@ return {
     }
     require("nightfox").setup({ palettes = palettes, specs = specs, groups = groups })
     -- setup must be called before loading
-    vim.cmd("colorscheme nightfox")
+    -- vim.cmd("colorscheme nightfox")
     -- local filetype = vim.bo.filetype
     -- if filetype == 'cpp' or filetype == '' then
     --   vim.cmd("colorscheme nightfox")
