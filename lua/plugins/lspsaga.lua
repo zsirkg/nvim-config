@@ -10,7 +10,7 @@ return {
       diagnostic = {
         show_code_action = true,
       },
-      code_action_lightbulb = {
+      lightbulb = {
         enable = false,
       },
       symbol_in_winbar = {
