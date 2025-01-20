@@ -69,6 +69,9 @@ set laststatus=2        " 总是显示状态栏
 " 类缩进
 set cino=g0
 
+" 关闭录制
+map q <Nop>
+
 " 鼠标操作
 if has('gui_running')
     set mouse=a
