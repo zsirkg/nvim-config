@@ -119,7 +119,7 @@ vnoremap p "_dp
 noremap <silent> <leader>w :w<cr>
 
 " esc
-inoremap jk <esc>
+" inoremap jk <esc>
 
 " 退出
 nnoremap <C-q> :q!<CR>

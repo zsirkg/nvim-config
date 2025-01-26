@@ -23,4 +23,20 @@ return {
       require('Comment').setup()
     end,
   },
+  {
+    'TheBlob42/houdini.nvim',
+    config = function()
+      require('houdini').setup()
+    end
+  },
+  {
+    "sphamba/smear-cursor.nvim",
+    opts = {},
+  },
+  {
+    'hat0uma/csvview.nvim',
+    config = function()
+      require('csvview').setup()
+    end
+  }
 }

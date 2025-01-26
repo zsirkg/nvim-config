@@ -18,7 +18,8 @@ return {
         folder_level = 0,
       },
       finder = {
-        layout = 'normal'
+        -- layout = 'normal'
+        left_width = 0.3,
       },
     })
     local keymap = vim.keymap.set
