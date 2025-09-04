@@ -3,7 +3,6 @@ return {
   {'mg979/vim-visual-multi'},
   {'tpope/vim-fugitive'},
   {'sindrets/diffview.nvim'},
-  {'vim-scripts/a.vim'},
   {
     'goolord/alpha-nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -29,10 +28,10 @@ return {
       require('houdini').setup()
     end
   },
-  {
-    "sphamba/smear-cursor.nvim",
-    opts = {},
-  },
+  -- {
+  --   "sphamba/smear-cursor.nvim",
+  --   opts = {},
+  -- },
   {
     'hat0uma/csvview.nvim',
     config = function()

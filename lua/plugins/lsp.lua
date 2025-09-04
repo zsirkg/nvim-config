@@ -34,14 +34,7 @@ return {
       lspconfig.bashls.setup{}
       lspconfig.jsonls.setup{}
       lspconfig.lua_ls.setup{}
-      lspconfig.clangd.setup{
-        on_init = function(client, _)
-          client.server_capabilities.semanticTokensProvider = nil -- turn off semantic tokens
-        end,
-        -- on_attach = function(client, bufnr)
-        --   require("nvim-navic").attach(client, bufnr)
-        -- end
-      }
+      lspconfig.clangd.setup{}
 
       vim.api.nvim_create_autocmd('LspAttach', {
         group = vim.api.nvim_create_augroup('UserLspConfig', {}),
@@ -57,6 +50,21 @@ return {
         end,
       })
 
+      -- 颜色太花
+      -- vim.api.nvim_set_hl(0, "@lsp.type.class.cpp", {})
+      -- vim.api.nvim_set_hl(0, "@lsp.type.variable.cpp", {})
+      -- vim.api.nvim_set_hl(0, "@lsp.type.parameter.cpp", {})
+      -- 全局禁用 semantic tokens
+      vim.api.nvim_create_autocmd("LspAttach", {
+        callback = function(args)
+          local client = vim.lsp.get_client_by_id(args.data.client_id)
+          if client and client.server_capabilities.semanticTokensProvider then
+            client.server_capabilities.semanticTokensProvider = nil
+          end
+        end,
+      })
+
+      vim.keymap.set('n', 's', '<cmd>ClangdSwitchSourceHeader<CR>', { silent = true, desc = 'Switch source/header (clangd)' })
     end,
   }
 }
